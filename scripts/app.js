@@ -206,21 +206,21 @@ newObserver.observe(items);
 
 /////////////////////////////////////
 
-const aClick = document.querySelector(".my-work");
-const aClick2 = document.querySelector(".home");
 const work = document.querySelector("#work");
 const home = document.querySelector("#home");
+const anchors = document.querySelectorAll(".anchor");
 
-aClick.addEventListener("click", function (event) {
+const anchorDrop = function (event) {
   event.preventDefault();
+  console.log("new-logic");
   complicated();
-  work.scrollIntoView({ behavior: "smooth" });
-});
+  if (event.target.dataset.atr === "#work") {
+    work.scrollIntoView({ behavior: "smooth" });
+  } else if (event.target.dataset.atr === "#home") {
+    home.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
-aClick2.addEventListener("click", function (event) {
-  event.preventDefault();
-  complicated();
-  home.scrollIntoView({ behavior: "smooth" });
-});
+anchors.forEach((curr) => curr.addEventListener("click", anchorDrop));
 
 //////////////////////////////////////////////////
