@@ -212,7 +212,6 @@ const anchors = document.querySelectorAll(".anchor");
 
 const anchorDrop = function (event) {
   event.preventDefault();
-  console.log("new-logic");
   complicated();
   if (event.target.dataset.atr === "#work") {
     work.scrollIntoView({ behavior: "smooth" });
