@@ -365,3 +365,107 @@ span.fade:nth-child(14) {
 .item:hover {
   opacity: 0.8;
 }
+
+.about-me-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-me {
+  margin-top: 4em;
+  padding: 0 40px;
+  height: 100vh;
+}
+
+.about-me em {
+  font-style: normal;
+  color: var(--primary);
+}
+
+.about-me h1 {
+  font-size: 3em;
+}
+
+.about-me-text,
+.about-me-2 {
+  width: 48%;
+}
+
+.about-me-2 {
+  transform: translateY(30px);
+}
+
+.about-me-text p {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.about-me-2 li {
+  font-size: 1.3em;
+}
+
+.slider-header {
+  text-align: center;
+  margin-top: 10em;
+}
+
+.slider-header h1 {
+  margin: 0;
+}
+
+.slider {
+  margin-top: 3em;
+  position: relative;
+}
+
+.slider-container {
+  display: flex;
+  width: 900px;
+  margin: 0 auto;
+  max-width: 900px;
+  overflow-x: hidden;
+  position: relative;
+  height: 200px;
+}
+
+.slider-item {
+  position: absolute;
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+  transition: 1s ease;
+  font-style: italic;
+}
+
+#nextBtn {
+  position: absolute;
+  font-size: 3em;
+  bottom: 100px;
+  cursor: pointer;
+  right: 20%;
+}
+
+#prevBtn {
+  position: absolute;
+  font-size: 3em;
+  bottom: 100px;
+  cursor: pointer;
+  left: 20%;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 200px;
+  background-color: var(--primary);
+  color: white;
+}
+
+#footer a {
+  color: #fff;
+}
+
+#footer p {
+  font-size: 1.1em;
+}

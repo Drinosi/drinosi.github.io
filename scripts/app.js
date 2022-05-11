@@ -208,8 +208,10 @@ newObserver.observe(items);
 
 const work = document.querySelector("#work");
 const home = document.querySelector("#home");
-const anchors = document.querySelectorAll(".anchor");
+const contactMe = document.querySelector("#contact");
+const about = document.querySelector("#about");
 
+const anchors = document.querySelectorAll(".anchor");
 const anchorDrop = function (event) {
   event.preventDefault();
   complicated();
@@ -217,9 +219,68 @@ const anchorDrop = function (event) {
     work.scrollIntoView({ behavior: "smooth" });
   } else if (event.target.dataset.atr === "#home") {
     home.scrollIntoView({ behavior: "smooth" });
+  } else if (event.target.dataset.atr === "#contact") {
+    contactMe.scrollIntoView({ behavior: "smooth" });
+  } else if (event.target.dataset.atr === "#about") {
+    about.scrollIntoView({ behavior: "smooth" });
   }
 };
 
 anchors.forEach((curr) => curr.addEventListener("click", anchorDrop));
 
-//////////////////////////////////////////////////
+////////////////////////////////////////////////////
+
+const carouselSlide = document.querySelector(".slider-container");
+const carouselQuotes = document.querySelectorAll(".slider-item");
+
+const nextBtn = document.querySelector("#nextBtn");
+const prevBtn = document.querySelector("#prevBtn");
+
+let counter = 0;
+const size = carouselQuotes.length;
+
+const goToSlide = function (slide) {
+  carouselQuotes.forEach((curr, i) => {
+    curr.style.transform = `translateX(${100 * (i - slide)}%)`;
+  });
+};
+
+goToSlide(0);
+
+const timer5 = setInterval(function (slide) {
+  if (counter === size - 1) {
+    counter = 0;
+  } else {
+    counter++;
+  }
+  goToSlide(counter);
+}, 5000);
+
+const nextSlide = function (slide) {
+  if (counter === size - 1) {
+    counter = 0;
+  } else {
+    counter++;
+  }
+  goToSlide(counter);
+};
+
+const prevSlide = function () {
+  if (counter === 0) {
+    counter = size - 1;
+  } else {
+    counter--;
+  }
+  goToSlide(counter);
+};
+
+nextBtn.addEventListener("click", nextSlide);
+prevBtn.addEventListener("click", prevSlide);
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowRight") nextSlide();
+});
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowLeft") prevSlide();
+});
