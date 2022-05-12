@@ -456,7 +456,7 @@ span.fade:nth-child(14) {
 
 #footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 20px 200px;
   background-color: var(--primary);
   color: white;
@@ -468,4 +468,39 @@ span.fade:nth-child(14) {
 
 #footer p {
   font-size: 1.1em;
+}
+
+@media only screen and (max-width: 480px) {
+  .slider-container {
+    width: 100%;
+  }
+
+  #logo {
+    height: auto;
+    justify-content: start;
+  }
+
+  #logo h2 {
+    font-size: 3.48em;
+  }
+
+  .paragraph {
+    text-align: start;
+  }
+
+  .paragraph p {
+    font-size: 2em;
+    margin-left: 0;
+  }
+
+  .ticking {
+    bottom: 5px;
+    right: 142px;
+    position: absolute;
+    height: 60px;
+  }
+
+  #home > section:nth-child(1) {
+    padding: 0 20px;
+  }
 }
