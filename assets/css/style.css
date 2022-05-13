@@ -338,15 +338,18 @@ span.fade:nth-child(14) {
   font-style: normal;
 }
 
-.items {
-  transform: translateY(80%);
-  opacity: 0;
-  transition: 1s ease;
+.itemsGrid {
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto auto auto;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+}
+
+.items {
+  transform: translateY(80%);
+  opacity: 0;
+  transition: 1s ease;
 }
 
 .items-active {
@@ -606,8 +609,8 @@ span.fade:nth-child(14) {
     color: white;
     justify-content: start;
   }
-  
-  ul a{
-  font-size:2em;
+
+  ul a {
+    font-size: 2em;
   }
 }

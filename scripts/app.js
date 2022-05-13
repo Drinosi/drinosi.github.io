@@ -187,12 +187,12 @@ observer2.observe(numSection);
 
 /////////////////////////////////////////////////////////////////
 
-const items = document.querySelector(".items");
+const items = document.querySelectorAll(".items");
 
 const newoptions = {
   root: null,
   threshold: 0.1,
-  rootMargin: "500px",
+  rootMargin: "400px",
 };
 
 const fadeWork = function (entries, observer) {
@@ -203,7 +203,7 @@ const fadeWork = function (entries, observer) {
 
 const newObserver = new IntersectionObserver(fadeWork, newoptions);
 
-newObserver.observe(items);
+items.forEach((curr) => newObserver.observe(curr));
 
 /////////////////////////////////////
 
