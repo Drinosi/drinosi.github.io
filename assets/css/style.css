@@ -484,7 +484,7 @@ span.fade:nth-child(14) {
   }
 
   #logo h2 {
-    font-size: 3.48em;
+    font-size: 3em;
   }
 
   .paragraph {
@@ -612,5 +612,9 @@ span.fade:nth-child(14) {
 
   ul a {
     font-size: 2em;
+  }
+
+  .my-work {
+    padding: 0 20px;
   }
 }
