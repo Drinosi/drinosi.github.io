@@ -494,13 +494,50 @@ span.fade:nth-child(14) {
   }
 
   .ticking {
-    bottom: 5px;
-    right: 142px;
-    position: absolute;
-    height: 60px;
+    display: none;
   }
 
   #home > section:nth-child(1) {
     padding: 0 20px;
+  }
+
+  .history {
+    height: auto;
+  }
+
+  .items {
+    grid-template-columns: auto;
+  }
+
+  .numbers {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .numbers p {
+    font-size: 1.1em;
+  }
+
+  .numbers h1 {
+    font-size: 2.3em;
+  }
+
+  .number1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .number2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .number3 {
+    justify-self: center;
+    grid-area: 2 / 1 / 3 / 3;
+    display: grid;
+    justify-items: center;
   }
 }
