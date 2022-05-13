@@ -191,7 +191,8 @@ const items = document.querySelector(".items");
 
 const newoptions = {
   root: null,
-  threhold: 0.1,
+  threshold: 0.1,
+  rootMargin: "500px",
 };
 
 const fadeWork = function (entries, observer) {

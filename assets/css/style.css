@@ -540,4 +540,84 @@ span.fade:nth-child(14) {
     display: grid;
     justify-items: center;
   }
+  .about-me-container {
+    display: grid;
+  }
+
+  .about-me-text,
+  .about-me-2 {
+    width: 100%;
+  }
+
+  .about-me {
+    padding: 0 20px;
+    min-height: 100vh;
+    height: auto;
+  }
+
+  .my-work h1 {
+    font-size: 2.3em;
+  }
+
+  .about-me-container h1 {
+    font-size: 2.3em;
+  }
+
+  .about-me-text p {
+    font-size: 1.1em;
+  }
+
+  .about-me-2 li {
+    font-size: 1.1em;
+  }
+
+  .about-me-2 ul {
+    padding-left: 20px;
+  }
+
+  .slider-header {
+    margin-top: 2em;
+  }
+
+  .slider-header h1 {
+    font-size: 2.3em;
+  }
+
+  .slider-item {
+    font-size: 1.2em;
+    text-align: start;
+  }
+
+  .slider-container {
+    width: 80%;
+  }
+
+  .slider {
+    margin-top: 1em;
+  }
+
+  #nextBtn {
+    position: absolute;
+    font-size: 2em;
+    bottom: 60%;
+    cursor: pointer;
+    right: 0;
+  }
+
+  #prevBtn {
+    position: absolute;
+    font-size: 2em;
+    bottom: 60%;
+    cursor: pointer;
+    left: 0;
+  }
+
+  #footer {
+    display: grid;
+
+    padding: 20px 40px;
+    background-color: var(--primary);
+    color: white;
+    justify-content: start;
+  }
 }
