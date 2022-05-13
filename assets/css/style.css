@@ -620,4 +620,8 @@ span.fade:nth-child(14) {
     color: white;
     justify-content: start;
   }
+  
+  ul a{
+  font-size:2em;
+  }
 }
