@@ -371,8 +371,9 @@ span.fade:nth-child(14) {
 
 .about-me-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
+  
 }
 
 .about-me {
@@ -395,9 +396,6 @@ span.fade:nth-child(14) {
   width: 48%;
 }
 
-.about-me-2 {
-  transform: translateY(30px);
-}
 
 .about-me-text p {
   font-size: 1.3em;
