@@ -373,7 +373,6 @@ span.fade:nth-child(14) {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  
 }
 
 .about-me {
@@ -395,7 +394,6 @@ span.fade:nth-child(14) {
 .about-me-2 {
   width: 48%;
 }
-
 
 .about-me-text p {
   font-size: 1.3em;
@@ -614,5 +612,66 @@ span.fade:nth-child(14) {
 
   .my-work {
     padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 845px) and (min-width: 481px) {
+  #home {
+    height: auto;
+    padding: 150px 0 100px 0;
+  }
+
+  .itemsGrid {
+    grid-template-columns: auto auto;
+  }
+
+  .numbers p {
+    font-size: 1.7em;
+  }
+
+  .numbers h1 {
+    font-size: 2em;
+  }
+
+  .about-me {
+    margin-top: 0;
+    height: auto;
+  }
+
+  .about-me-container {
+    display: grid;
+  }
+
+  .about-me-text,
+  .about-me-2 {
+    width: 100%;
+  }
+
+  .slider-header {
+    margin-top: 3em;
+  }
+
+  .slider-header h1 {
+    font-size: 2.3em;
+  }
+
+  .slider-container {
+    width: 100%;
+  }
+
+  .slider-item {
+    font-size: 1.6em;
+  }
+
+  #nextBtn {
+    right: -25px;
+  }
+
+  #prevBtn {
+    left: -25px;
+  }
+
+  #footer {
+    padding: 20px;
   }
 }
