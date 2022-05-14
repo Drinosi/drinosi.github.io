@@ -378,7 +378,6 @@ span.fade:nth-child(14) {
 .about-me {
   margin-top: 4em;
   padding: 0 40px;
-  height: 100vh;
 }
 
 .about-me em {
@@ -710,5 +709,15 @@ span.fade:nth-child(14) {
 
   .itemsGrid {
     grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 1700px) and (min-width: 1201px) {
+  #nextBtn {
+    right: 10%;
+  }
+
+  #prevBtn {
+    left: 10%;
   }
 }
