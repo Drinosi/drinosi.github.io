@@ -675,3 +675,40 @@ span.fade:nth-child(14) {
     padding: 20px;
   }
 }
+
+@media only screen and (max-width: 1200px) and (min-width: 846px) {
+  #home {
+    height: auto;
+    padding: 150px 0 100px 0;
+  }
+
+  .history {
+    height: auto;
+    padding: 100px 0;
+  }
+
+  .about-me {
+    margin-top: 0;
+    height: auto;
+  }
+
+  .about-me h1 {
+    font-size: 2.5em;
+  }
+
+  .slider-header {
+    margin-top: 3em;
+  }
+
+  #prevBtn {
+    left: -20px;
+  }
+
+  #nextBtn {
+    right: -20px;
+  }
+
+  .itemsGrid {
+    grid-template-columns: auto auto;
+  }
+}
