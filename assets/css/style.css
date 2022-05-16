@@ -497,6 +497,7 @@ span.fade:nth-child(14) {
 
   #home > section:nth-child(1) {
     padding: 0 20px;
+    width: 100%;
   }
 
   .history {
